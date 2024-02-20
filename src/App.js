@@ -1,11 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Provider } from "react-redux";
+import { Body } from "./components/index";
+import appStore from "./app/appStore";
 function App() {
   return (
-    <div className="App">
-     Mohit
-    </div>
+    <Provider store={appStore}>
+      <Body />
+    </Provider>
   );
 }
 
